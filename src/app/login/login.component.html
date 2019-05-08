@@ -1,0 +1,36 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+  <p>
+    <ngb-alert [dismissible]="false">
+      <strong>Warning!</strong> Sample alert.
+    </ngb-alert>
+  </p>
+  <p *ngIf="lastStatus === 400">Username or password is incorrect.</p>
+  <p *ngIf="lastStatus === 500">Unknown server error occurred.</p>
+  <p *ngIf="lastStatus === 0">Server unreachable.</p>
+  <div>
+    <img src="reimburse.png" class="banner">
+      
+</div>
+<div class= "cake" >
+<div class="input-group mb-3">
+ <div class="input-group-prepend">
+   <span class="input-group-text" id="inputGroup-sizing-default">Username</span>
+ </div>
+
+ <input type="text" id ="ers_username" [(ngModel)]="ers_Username" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+</div>
+
+<div class="input-group mb-3">
+ <div class="input-group-prepend">
+   <span class="input-group-text" id="inputGroup-sizing-default">password</span>
+ </div>
+ <input type="password" id ="ers_password" [(ngModel)]="ers_Password" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+ 
+ <input type="submit" [disabled]="!formValidation()" (click)="submit()">
+</div></div>
+
+<router-outlet></router-outlet>
