@@ -1,36 +1,35 @@
 <!--The content below is only a placeholder and can be replaced.-->
+
+
+
 <div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <p>
-    <ngb-alert [dismissible]="false">
-      <strong>Warning!</strong> Sample alert.
-    </ngb-alert>
-  </p>
+    <img id="photo" src="https://lh3.googleusercontent.com/q07u536bPcKZYEI5rC_1i93dviWnkWFuEScat3j2pxyfU6phEaVndtWeca2FL6TfZ4OObEYV16OcIkLGE9SJaDtMAv9jJuoAixUHQJiGml5wSXqVqgJNxzUBQ7cYiO3Bes2wmspX_iBarsf-gtjJXOeS0eYohENOO2Z4dp9QUQF7afkfRPVaae2N6L15K3ZNJICy3lU0ryLUUD5EkjDmGYy5jnARTpvEAmG5H3m8F-1MUTocEUBSG-k4HdtO4JyL5XdnAYPPzQdimKzktWzt9qX25ntWwKZxNBjK-hMC2A20ve_h6bhpnvx8SQwUPIca8GB8oEB_XafVRStWTTXPuh90-GcAbbaXTS8TPryOjZKcI19c8tm8hERcVymxRQJ183nQgDQNq1j_Xmk48B4RF5uogBxOFO1-SIgnirC-sW-VoE1Rf2QacvsdOlyQ0q_kXYQ_0SVTgc4Nw9tZZWyId6T-TM0lP0FfdjMxzrXVmbHHXHVWQ8lkB6qVHC3vKS1td4YImlN-H8ivUnczQr2CqZ4VtsZlZSR5w8Czl617ks34aYQQDhkm1JU4_eESsIs3-LSikXax488nMSWuqDcvLksGybB0W2W8ho_p8qhiQX3JhhFXFrbkAlzZjTuTTeuyQ0YS6N1iRZ_hmMq7Ee_b-_LMZwGwoA=w655-h925-no">
+    <div id="caption">Guild Reimbursement</div>
+
   <p *ngIf="lastStatus === 400">Username or password is incorrect.</p>
   <p *ngIf="lastStatus === 500">Unknown server error occurred.</p>
   <p *ngIf="lastStatus === 0">Server unreachable.</p>
   <div>
-    <img src="reimburse.png" class="banner">
       
 </div>
 <div class= "cake" >
-<div class="input-group mb-3">
- <div class="input-group-prepend">
-   <span class="input-group-text" id="inputGroup-sizing-default">Username</span>
- </div>
 
- <input type="text" id ="ers_username" [(ngModel)]="ers_Username" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-</div>
-
-<div class="input-group mb-3">
- <div class="input-group-prepend">
-   <span class="input-group-text" id="inputGroup-sizing-default">password</span>
- </div>
- <input type="password" id ="ers_password" [(ngModel)]="ers_Password" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
  
- <input type="submit" [disabled]="!formValidation()" (click)="submit()">
-</div></div>
 
-<router-outlet></router-outlet>
+ <input type="text" id ="ers_username" [(ngModel)]="ers_Username" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="Username">
+
+
+
+     
+ 
+ <input type="password" id ="ers_password" [(ngModel)]="ers_Password" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="Password">
+
+
+
+ <ul style="list-style: none;">
+   
+    <li (click) ="submit()">Login</li>
+ 
+  </ul>
+
+</div>

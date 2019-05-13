@@ -19,7 +19,7 @@ export class LoginComponent implements OnInit , OnDestroy {
   ngOnInit() {
     this.loginResponse = this.loginService.$loginStatus.subscribe(status => {
       if(status === 200){
-        this.router.navigateByUrl('reimburstments');
+        this.router.navigateByUrl('welcomepage');
       } else {
         this.lastStatus = status;
       }
@@ -37,8 +37,6 @@ export class LoginComponent implements OnInit , OnDestroy {
   }
 
   submit() {
-    console.log(this.ers_Username);
-    console.log(this.ers_Password);
     this.loginService.login(this.ers_Username, this.ers_Password);
   }
 }

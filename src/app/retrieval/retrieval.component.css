@@ -1,4 +1,4 @@
-div.ff7 ,input[type="text"], textarea, select, h1, li {
+div.ff7, h1{
     border: solid 1px #424542;
     box-shadow: 1px 1px #e7dfe7,
                 -1px -1px #e7dfe7,
@@ -33,24 +33,3 @@ div.ff7 ,input[type="text"], textarea, select, h1, li {
     font-weight: normal;
     margin: 5px 0;
 }
- 
-option {
- color: black;
-}
-
-li:hover:before{
-    content: url(https://vignette.wikia.nocookie.net/finalfantasy/images/8/8e/FF7Cursor.png); 
-     display: inline;
-     cursor:none;
-   }
-   ul{
-     padding:0px;
-     cursor: none;
-   }
-
-
-   li{
-       margin: 0 auto;
-       width: 150px;
-       cursor: none;
-   }

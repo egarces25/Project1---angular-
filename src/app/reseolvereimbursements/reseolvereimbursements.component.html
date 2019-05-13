@@ -1,0 +1,25 @@
+
+
+<div *ngFor="let request of active" class = "request">
+  <div class="ff7">Reimbursement Request Id: {{request.reimb_Id}}
+  Author ID: {{request.reimb_Author}}
+  <br>
+  Amount: {{request.reimb_Amount}} $
+  <br>
+  Description: {{request.reimb_Description}}
+  <br>
+  Type ID: {{request.reimb_Type_Id}}
+  <br>
+  Status ID : {{request.reimb_Status_Id}}
+  <div class="resolveform">
+    <label for="reimbtype">Set Status: </label>
+    <select class="form-control" id="statusId" [(ngModel)]="reimb_Status_Id" name="reimb_Status_Id">   
+            <option value ="1">Approve</option>
+            <option value ="2">Deny</option>
+    </select>
+        <button type="submit" class="btn btn-primary" (click)="resolve(request.reimb_Id, reimb_Status_Id)" id = "resolve">Resolve</button>
+  </div>  
+</div>
+
+<!-- <p  class = "titlebox" *ngIf= "isEmpty()">No Reimbursement Requests Found</p> -->
+

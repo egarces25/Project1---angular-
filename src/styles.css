@@ -1,1 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
+body, html {
+    background-image: url("http://wallpaperswide.com/download/final_fantasy_xiv_online-wallpaper-1280x800.jpg");
+    background-size: cover;
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    width: 100%;
+  }
+  
+ 

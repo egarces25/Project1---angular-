@@ -8,6 +8,9 @@ import { RequestsComponent } from './requests/requests.component';
 import { LoginComponent } from './login/login.component';
 import { FormsModule, NgForm } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { RetrievalComponent } from './retrieval/retrieval.component';
+import { WelcomepageComponent } from './welcomepage/welcomepage.component';
+import { ReseolvereimbursementsComponent } from './reseolvereimbursements/reseolvereimbursements.component';
 
 
 @NgModule({
@@ -15,7 +18,10 @@ import { HttpClientModule } from '@angular/common/http';
   declarations: [
     AppComponent,
     RequestsComponent,
-    LoginComponent
+    LoginComponent,
+    RetrievalComponent,
+    WelcomepageComponent,
+    ReseolvereimbursementsComponent
   ],
   imports: [
     NgbModule,
