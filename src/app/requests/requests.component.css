@@ -54,3 +54,6 @@ li:hover:before{
        width: 150px;
        cursor: none;
    }
+   #content-format{
+     margin-top: 10px;
+   }

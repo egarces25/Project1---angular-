@@ -19,10 +19,7 @@
       border: 4px solid white;
       border-radius: 4px;
       cursor:none;
-      position: fixed;
-
-
-     
+      position: fixed;    
 }
     #right{
       margin: 0 7%;
@@ -35,5 +32,10 @@
     ul{
       padding:0px;
     }
- 
+
+    .col-md-2 side-menu{
+      flex-grow: 0;
+    }
+
+    
  
